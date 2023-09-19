@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bgimg {
+    background-image: url(/src/images/bgImg.png);
+    height: 300px;
+    width: 300px;
+}

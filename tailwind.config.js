@@ -9,7 +9,10 @@ module.exports = {
         purp: "#903AFF",
         pinnk: "#D434FE",
         dark: "#150E28;"
-      }
+      },
+      // backgroundImage: {
+      //   bgimg: "url(/src/images/bgImg.png)"
+      // }
     },
   },
   plugins: [],
