@@ -5,7 +5,7 @@ import RegistrationBtn from "../RegistrationBtn/RegistrationBtn";
 
 const Section1 = () => {
     return (
-        <div className=" border-b border-gray-600">
+        <div className=" border-t border-b border-gray-600">
             <div className=" flex">
                 {/* write-ups */}
                 <div className=" ml-16 pt-20 mt-10">
