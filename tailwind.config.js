@@ -8,7 +8,8 @@ module.exports = {
       colors: {
         purp: "#903AFF",
         pinnk: "#D434FE",
-        dark: "#150E28;"
+        dark: "#150E28;",
+        glass: "rgba(217, 217, 217, 0.03)"
       },
       // backgroundImage: {
       //   bgimg: "url(/src/images/bgImg.png)"

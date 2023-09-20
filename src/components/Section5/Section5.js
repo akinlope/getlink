@@ -3,7 +3,7 @@ import purplestar from "../../images/purplestart.png"
 
 const Section5 = () => {
     return (
-        <div>
+        <div className=" border-b border-gray-700">
             <div className=" flex justify-between mt-10 mx-10">
                 {/* writeups */}
                 <div className=" ml-20 mt-10">
