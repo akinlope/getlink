@@ -2,7 +2,7 @@ import RegistrationBtn from "../RegistrationBtn/RegistrationBtn";
 
 const Navbar = () => {
     return (
-        <div className=" border-b border-gray-700 pb-6">
+        <div className=" pb-6">
             <div className=" flex justify-between mx-16 pt-10">
                 <div className=" text-[36px] font-bold">
                     {/* logo */}

@@ -1,5 +1,5 @@
-import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
+import ContactPage from "./pages/ContactPage";
 import LandingPage from "./pages/LandingPage";
 
 
@@ -8,8 +8,8 @@ function App() {
   return (
     <div className=" bg-dark">
       <Navbar />
-      <LandingPage />
-      <Footer />
+      {/* <LandingPage /> */}
+      <ContactPage />
     </div>
   );
 }
