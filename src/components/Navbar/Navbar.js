@@ -1,27 +1,45 @@
 import RegistrationBtn from "../RegistrationBtn/RegistrationBtn";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../utils/variants";
 
 const Navbar = () => {
-    return (
-        <div className=" border-b border-gray-700 pb-6">
-            <div className=" flex justify-between mx-16 pt-10">
-                <div className=" text-[36px] font-bold">
-                    {/* logo */}
-                    <span className=" text-white">get<span className=" text-pinnk">linked</span></span>
-                </div>
-
-                {/* links */}
-                <div className=" flex justify-between gap-24 items-center text-white">
-                    <div className=" cursor-pointer text-base font-normal">Timeline</div>
-                    <div className=" cursor-pointer text-base font-normal">Overview</div>
-                    <div className=" cursor-pointer text-base font-normal">FAQs</div>
-                    <div className=" cursor-pointer text-base font-normal">Contact</div>
-                    <div className=" cursor-pointer">
-                        <RegistrationBtn text="Register" />
-                    </div>
-                </div>
-            </div>
+  return (
+    <motion.div
+      variants={fadeIn("down")}
+      initial="initial"
+      animate="animate"
+      custom={0.9}
+      className="w-full px-24 pt-8 pb-6 border-b border-gray-700 border-opacity-50"
+    >
+      <div className="flex justify-between ">
+        <div className=" text-[36px] font-bold">
+          {/* logo */}
+          <span className="text-white font-clashDisplay">
+            get<span className=" text-pinnk">linked</span>
+          </span>
         </div>
-    );
-}
+
+        {/* links */}
+        <div className="flex items-center justify-between gap-24 text-white ">
+          <div className="text-base font-normal duration-500 cursor-pointer hover:text-lightPink">
+            Timeline
+          </div>
+          <div className="text-base font-normal duration-500 cursor-pointer hover:text-purp">
+            Overview
+          </div>
+          <div className="text-base font-normal duration-500 cursor-pointer hover:text-lightPink">
+            FAQs
+          </div>
+          <div className="text-base font-normal duration-500 cursor-pointer hover:text-purp">
+            Contact
+          </div>
+          <div className="cursor-pointer ">
+            <RegistrationBtn text="Register" />
+          </div>
+        </div>
+      </div>
+    </motion.div>
+  );
+};
 
 export default Navbar;
